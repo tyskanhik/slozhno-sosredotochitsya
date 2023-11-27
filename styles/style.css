@@ -2,4 +2,156 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  position: relative;
+  padding: var(--basic-padding);
+}
+
+.header__theme-menu-list {
+  display: grid;
+  justify-items: end;
+  gap: 17px;
+  padding-block-start: 63px;
+  line-height: 18px;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button {
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__cover {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding-block-start: 69px;
+  padding-block-end: 56px;
+}
+
+.header__cover-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  color: var(--color-title);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--color-title-decor);
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+
+/* декоративные уголочки */
+
+.decorated-zone::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: var(--basic-padding);
+  right: var(--basic-padding);
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: var(--basic-padding);
+  left: var(--basic-padding);
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+
+/* декоратиная надпись в теаной теме */
+
+.decorated-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  top: var(--basic-padding);
+  right: calc(var(--basic-padding) + 10px);
+}
+
+.decorated-elem::before {
+  content: "REC";
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.decorated-elem::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 2px 2px var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --basic-padding: 20px;
+  }
+
+  .header__theme-menu-list {
+    padding-block-start: 170px;
+  }
+
+  .header__cover {
+    gap: 163px;
+    padding-block-start: 176px;
+    padding-block-end: 163px;
+  }
+
+  .header__cover-title {
+    margin-left: calc(var(--basic-padding) / (-1));
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__cover-text {
+    width: 50%; 
+    align-self: end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list {
+    padding-top: 0;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .header__cover {
+    padding-block-start: 277px;
+    padding-block-end: 114px;
+    gap: 113px;
+  }
 }
