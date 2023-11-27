@@ -4,11 +4,20 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
+  background-color: rgb(0,3,47);
+  background-image: var(--background-image);
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
   position: relative;
   padding: var(--basic-padding);
+  background-image: var(--background-image-header);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .header__theme-menu-list {

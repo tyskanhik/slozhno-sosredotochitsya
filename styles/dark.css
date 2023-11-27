@@ -10,3 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root .theme_dark {
+  --accent-color: #ff0070;
+  --color-title: #DB00FF;
+  --color-title-decor: #000028;
+  --background-image-header: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
+}

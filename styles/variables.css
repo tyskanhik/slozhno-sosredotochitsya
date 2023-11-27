@@ -8,4 +8,6 @@
   --color-title: #DB00FF;
   --color-title-decor: #000028;
   --basic-padding: 10px;
+  --background-image-header: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
 }

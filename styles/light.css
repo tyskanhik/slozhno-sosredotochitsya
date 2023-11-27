@@ -10,3 +10,30 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root .theme_light {
+  /* Переменные светлой темы */    
+  --color-title: #FFC2E6;
+  --color-text: #353430;
+  --accent-color: rgb(255,141,203);
+  --background-image-header: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .decorated-elem {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-title: #FFC2E6;
+    --color-text: #353430;
+    --accent-color: rgb(255,141,203);
+    --background-image-header: url(../images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
+  }
+
+  .decorated-elem {
+    display: none;
+  }
+}
