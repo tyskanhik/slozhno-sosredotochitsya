@@ -12,6 +12,7 @@
 }
 
 .header {
+  height: 100vh;
   position: relative;
   padding: var(--basic-padding);
 }
@@ -46,7 +47,6 @@
   flex-direction: column;
   gap: 55px;
   padding-block-start: 69px;
-  padding-block-end: 56px;
 }
 
 .header__cover-title {
@@ -123,6 +123,7 @@
 @media (min-width: 768px) {
   :root {
     --basic-padding: 20px;
+    --padding-main-section: 60px;
   }
 
   .header__theme-menu-list {
@@ -163,6 +164,7 @@
 
 .content {
   padding: var(--basic-padding);
+  padding-block-end: var(--padding-main-section);
 }
 
 .content-section {
@@ -271,5 +273,28 @@ h4.item-title {
 
   .street{
     grid-column-end: span 2;
+  }
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  padding: var(--basic-padding);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  color: var(--color-title);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .footer-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
