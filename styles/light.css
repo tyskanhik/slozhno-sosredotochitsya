@@ -9,6 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
 
   .decorated-elem {
     display: none;
@@ -19,7 +20,6 @@
   /* Переменные светлой темы */    
   --color-title: #FFC2E6;
   --accent-color: rgb(255,141,203);
-  --background-image: url(../images/cover-image-light.png);
   --color-text: #353430;
 }
 
@@ -27,10 +27,13 @@
   :root {
     --color-title: #FFC2E6;
     --accent-color: rgb(255,141,203);
-    --background-image: url(../images/cover-image-light.png);
     --color-text: #353430;
   }
 
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+  
   .decorated-elem {
     display: none;
   }
