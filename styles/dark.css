@@ -11,7 +11,7 @@
   */
   background-image: url(../images/cover-image-dark.png);
 
-    /* декоратиная надпись в теаной теме */
+  /* декоратиная надпись в теаной теме */
 
   .decorated-elem {
     display: flex;

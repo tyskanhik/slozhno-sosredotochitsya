@@ -17,23 +17,23 @@
 }
 
 :root .theme_light {
-  /* Переменные светлой темы */    
+  /* Переменные светлой темы */
   --color-title: #FFC2E6;
-  --accent-color: rgb(255,141,203);
+  --accent-color: rgb(255, 141, 203);
   --color-text: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --color-title: #FFC2E6;
-    --accent-color: rgb(255,141,203);
+    --accent-color: rgb(255, 141, 203);
     --color-text: #353430;
   }
 
   .page {
     background-image: url(../images/cover-image-light.png);
   }
-  
+
   .decorated-elem {
     display: none;
   }
