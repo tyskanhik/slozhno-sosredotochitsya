@@ -9,28 +9,26 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  .decorated-elem {
+    display: none;
+  }
 }
 
 :root .theme_light {
   /* Переменные светлой темы */    
   --color-title: #FFC2E6;
-  --color-text: #353430;
   --accent-color: rgb(255,141,203);
-  --background-image-header: url(../images/cover-image-light.png);
   --background-image: url(../images/cover-image-light.png);
-}
-
-.theme_light .decorated-elem {
-  display: none;
+  --color-text: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --color-title: #FFC2E6;
-    --color-text: #353430;
     --accent-color: rgb(255,141,203);
-    --background-image-header: url(../images/cover-image-light.png);
     --background-image: url(../images/cover-image-light.png);
+    --color-text: #353430;
   }
 
   .decorated-elem {
