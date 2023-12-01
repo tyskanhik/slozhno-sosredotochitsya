@@ -17,7 +17,7 @@
     display: none;
   }
 
-  @media (min-width: 1024px) {
+  @media (width >=1024px) {
     .header__cover-title {
       text-shadow: 4px 4px 0 #ff0070;
     }
@@ -58,7 +58,7 @@
     display: none;
   }
 
-  @media (min-width: 1024px) {
+  @media (width >=1024px) {
     .header__cover-title {
       text-shadow: 4px 4px 0 #ff0070;
     }

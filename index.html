@@ -173,16 +173,36 @@
     <section class="content-section pictures">
       <h2 class="pictures-title title-decor">А можно в картинках?</h2>
       <div class="pictures-gallery">
-        <img class="image sunset" loading="lazy" src="./images/sunset.png" 
-          alt="закат на фоне моря и гор">
-        <img class="image ice-cream" loading="lazy" src="./images/ice-cream.png"
-          alt="мороженое в миске состоящее из круглых рожиц">
-        <img class="image tape" loading="lazy" src="./images/tape.png" 
-          alt="касcета на фоне экрана с проигрывателем">
-        <img class="image books" loading="lazy" src="./images/books.png"
-          alt="книги сложенные друг на друга и на верхней стоит чашка кофе">
-        <img class="image street" loading="lazy" src="./images/street.png"
-          alt="улица. по бокам дома спереди забор и развилка дороги">
+        <picture class="image sunset">
+          <source srcset="./images/sunset.avif" type="image/avif">
+          <source srcset="./images/sunset.webp" type="image/webp">
+          <img class="image sunset" loading="lazy" src="./images/sunset.png" 
+            alt="закат на фоне моря и гор">
+        </picture>
+        <picture class="image ice-cream">
+          <source srcset="./images/ice-cream.avif" type="image/avif">
+          <source srcset="./images/ice-cream.webp" type="image/webp">
+          <img class="image" loading="lazy" src="./images/ice-cream.png"
+            alt="мороженое в миске состоящее из круглых рожиц">
+        </picture>
+        <picture class="image tape">
+          <source srcset="./images/tape.avif" type="image/avif">
+          <source srcset="./images/tape.webp" type="image/webp">
+          <img class="image tape" loading="lazy" src="./images/tape.png" 
+            alt="касcета на фоне экрана с проигрывателем">
+        </picture>
+        <picture class="image books">
+          <source srcset="./images/books.avif" type="image/avif">
+          <source srcset="./images/books.webp" type="image/webp">
+          <img class="image books" loading="lazy" src="./images/books.png"
+            alt="книги сложенные друг на друга и на верхней стоит чашка кофе">
+        </picture>
+        <picture class="image street">
+          <source srcset="./images/street.avif" type="image/avif">
+          <source srcset="./images/street.webp" type="image/webp">
+          <img class="image street" loading="lazy" src="./images/street.png"
+            alt="улица. по бокам дома спереди забор и развилка дороги">
+        </picture>
       </div>
     </section>
   </main>
