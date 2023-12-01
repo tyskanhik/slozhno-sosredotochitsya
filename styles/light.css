@@ -11,17 +11,21 @@
   */
   
   background-image: url(../images/cover-image-light.png);
-
-  :root {
-    /* Переменные светлой темы */
-    --color-title: #FFC2E6;
-    --accent-color: rgb(255, 141, 203);
-    --color-text: #353430;
+  
+  .contetn-sectionn-title {
+    color: var(--color-text);
   }
-
+  
   .decorated-elem {
     display: none;
   }
+}
+
+:root .page.theme_light {
+  /* Переменные светлой темы */
+  --color-title: #FFC2E6;
+  --accent-color: rgb(255, 141, 203);
+  --color-text: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -41,5 +45,9 @@
 
   .decorated-elem {
     display: none;
+  }
+
+  .contetn-sectionn-title {
+    color: var(--color-text);
   }
 }
