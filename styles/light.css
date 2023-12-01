@@ -32,7 +32,11 @@
   }
 
   .page {
+    background-color: rgb(255,238,247);
     background-image: url(../images/cover-image-light.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .decorated-elem {
