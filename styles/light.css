@@ -9,34 +9,45 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  
+
   background-image: url(../images/cover-image-light.png);
-  
-  .contetn-sectionn-title {
-    color: var(--color-text);
-  }
-  
+
+
   .decorated-elem {
     display: none;
   }
+
+  @media (min-width: 1024px) {
+    .header__cover-title {
+      text-shadow: 4px 4px 0 #ff0070;
+    }
+
+    .footer-title {
+      text-shadow: 4px 4px 0 #ff0070;
+    }
+  }
 }
 
-:root .page.theme_light {
+:root .theme_light {
   /* Переменные светлой темы */
   --color-title: #FFC2E6;
-  --accent-color: rgb(255, 141, 203);
+  --accent-color: #353430;
   --color-text: #353430;
+  --decor-background: #ff8dcb;
+  --color-border-hover: rgba(50, 49, 45, 0.40);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --color-title: #FFC2E6;
-    --accent-color: rgb(255, 141, 203);
+    --accent-color: #353430;
     --color-text: #353430;
+    --decor-background: #ff8dcb;
+    --color-border-hover: rgba(50, 49, 45, 0.40);
   }
 
   .page {
-    background-color: rgb(255,238,247);
+    background-color: rgb(255, 238, 247);
     background-image: url(../images/cover-image-light.png);
     background-position: center;
     background-size: cover;
@@ -47,7 +58,13 @@
     display: none;
   }
 
-  .contetn-sectionn-title {
-    color: var(--color-text);
+  @media (min-width: 1024px) {
+    .header__cover-title {
+      text-shadow: 4px 4px 0 #ff0070;
+    }
+
+    .footer-title {
+      text-shadow: 4px 4px 0 #ff0070;
+    }
   }
 }
