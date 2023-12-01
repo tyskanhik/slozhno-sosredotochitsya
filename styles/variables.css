@@ -6,8 +6,7 @@
 :root {
   --accent-color: #ff0070;
   --color-title: #DB00FF;
+  --color-text: #F1B2CE;
   --color-title-decor: #000028;
   --basic-padding: 10px;
-  --padding-main-section: 42px;
-  --color-text: #F1B2CE;
 }

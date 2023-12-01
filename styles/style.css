@@ -12,6 +12,9 @@
 }
 
 .header {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
   position: relative;
   padding: var(--basic-padding);
@@ -21,7 +24,6 @@
   display: grid;
   justify-items: end;
   gap: 17px;
-  padding-block-start: 63px;
   line-height: 18px;
   color: var(--accent-color);
 }
@@ -37,13 +39,6 @@
 .header__theme-menu-button_active {
   pointer-events: none;
   border: 1px solid var(--accent-color);
-}
-
-.header__cover {
-  display: flex;
-  flex-direction: column;
-  gap: 55px;
-  padding-block-start: 69px;
 }
 
 .header__cover-title {
@@ -121,17 +116,6 @@
 @media (min-width: 768px) {
   :root {
     --basic-padding: 20px;
-    --padding-main-section: 60px;
-  }
-
-  .header__theme-menu-list {
-    padding-block-start: 170px;
-  }
-
-  .header__cover {
-    gap: 163px;
-    padding-block-start: 174px;
-    padding-block-end: 163px;
   }
 
   .header__cover-title {
@@ -141,34 +125,31 @@
 
   .header__cover-text {
     width: 50%;
-    align-self: end;
+    justify-self: self-end;
   }
 }
 
 @media (min-width: 1024px) {
+  .header__theme-menu {
+    align-self: start;
+  }
+
   .header__theme-menu-list {
-    padding-top: 0;
     grid-template-columns: repeat(3, min-content);
     justify-content: center;
     gap: 10px;
-  }
-
-  .header__cover {
-    padding-block-start: 277px;
-    padding-block-end: 114px;
-    gap: 113px;
   }
 }
 
 .content {
   padding: var(--basic-padding);
-  padding-block-end: var(--padding-main-section);
+  padding-block-end: 40px;
 }
 
 .content-section {
   display: grid;
   gap: 20px;
-  padding-block-start: 50px;
+  padding-block-start: 51px;
 }
 
 .content-section:first-of-type {
@@ -213,6 +194,10 @@ h4.item-title {
     width: calc(100% / 3 - var(--basic-padding) * 2);
   }
 
+  .content {
+    padding-block-end: 60px;
+  }
+
   .content-section {
     padding-block-start: 80px;
   }
@@ -229,10 +214,6 @@ h4.item-title {
 
   .content-section:nth-child(even) .content-section__list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .content-section:first-of-type {
-    padding-block-start: 42px;
   }
 }
 
@@ -288,7 +269,6 @@ h4.item-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
-  /* 95.7px */
   color: var(--color-title);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
