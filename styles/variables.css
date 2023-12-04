@@ -8,7 +8,14 @@
   --color-title: #DB00FF;
   --color-text: #F1B2CE;
   --decor-background: #ff0070;
+  --title-shadow-color:#ff0070;
   --color-title-decor: #000028;
   --color-border-hover: #ff007066;
   --basic-padding: 10px;
+
+  --background-color: rgb(0, 3, 47);
+  --background-image: url(../images/cover-image-dark.png);
+
+  --font-size-title-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-title-desctop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }

@@ -10,21 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  background-image: url(../images/cover-image-light.png);
-
-
   .decorated-elem {
     display: none;
-  }
-
-  @media (width >=1024px) {
-    .header__cover-title {
-      text-shadow: 4px 4px 0 #ff0070;
-    }
-
-    .footer-title {
-      text-shadow: 4px 4px 0 #ff0070;
-    }
   }
 }
 
@@ -34,7 +21,10 @@
   --accent-color: #353430;
   --color-text: #353430;
   --decor-background: #ff8dcb;
+  --title-shadow-color: #ff8dcb;
   --color-border-hover: rgba(50, 49, 45, 0.40);
+  --background-color: rgb(255, 238, 247);
+  --background-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -43,28 +33,26 @@
     --accent-color: #353430;
     --color-text: #353430;
     --decor-background: #ff8dcb;
+    --title-shadow-color: #ff8dcb;
     --color-border-hover: rgba(50, 49, 45, 0.40);
+    --background-color: rgb(255, 238, 247);
+    --background-image: url(../images/cover-image-light.png);
   }
 
-  .page {
-    background-color: rgb(255, 238, 247);
-    background-image: url(../images/cover-image-light.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
 
   .decorated-elem {
     display: none;
   }
+}
 
-  @media (width >=1024px) {
-    .header__cover-title {
-      text-shadow: 4px 4px 0 #ff0070;
-    }
+@media (prefers-color-scheme: light) and (width >= 1024px) {
+  :root {
+    --title-shadow-color: #ff0070;
+  }
+}
 
-    .footer-title {
-      text-shadow: 4px 4px 0 #ff0070;
-    }
+@media (width >= 1024px) {
+  .page.theme_light {
+    --title-shadow-color: #ff0070;
   }
 }

@@ -10,33 +10,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  background-image: url(../images/cover-image-dark.png);
-
-  /* декоратиная надпись в теаной теме */
-
   .decorated-elem {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    position: absolute;
-    top: var(--basic-padding);
-    right: calc(var(--basic-padding) + 10px);
-  }
-
-  .decorated-elem::before {
-    content: "REC";
-    color: var(--accent-color);
-    line-height: 25px;
-  }
-
-  .decorated-elem::after {
-    content: "";
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 0px 0px 2px 2px var(--accent-color);
   }
 }
 
@@ -45,6 +20,9 @@
   --color-title: #DB00FF;
   --color-text: #F1B2CE;
   --decor-background: #ff0070;
+  --title-shadow-color:#ff0070;
   --color-title-decor: #000028;
   --color-border-hover: #ff007066;
+  --background-color: rgb(0, 3, 47);
+  --background-image: url(../images/cover-image-dark.png);
 }
